@@ -21,4 +21,10 @@ const addRandomColorToBg = () => {
   return applyColorToBody(color);
 };
 
+const newButton = document.getElementById("new-colors");
+// onclick attaches 1 event
+//newButton.onclick = () => addRandomColorToBg();
+
+newButton.addEventListener("click", addRandomColorToBg);
+
 console.log(addRandomColorToBg());
